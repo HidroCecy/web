@@ -1,0 +1,5 @@
+com\hidroponia\hidroponia\model\repository\Controller\NosotrosController.class
+com\hidroponia\hidroponia\model\repository\PlantaRepository.class
+com\hidroponia\hidroponia\model\Planta.class
+com\hidroponia\hidroponia\model\repository\Controller\PlantaController.class
+com\hidroponia\hidroponia\HidroponiaApplication.class
