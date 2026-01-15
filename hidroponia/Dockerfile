@@ -1,3 +1,9 @@
-FROM eclipse-temurin:22-jdk-alpine
-COPY target/*.jar hidroponia-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/hidroponia-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY target/*.jar app.jar
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "app.jar"]
