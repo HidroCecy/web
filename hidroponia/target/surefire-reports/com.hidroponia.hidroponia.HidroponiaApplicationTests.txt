@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.hidroponia.hidroponia.HidroponiaApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.111 s -- in com.hidroponia.hidroponia.HidroponiaApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.22 s -- in com.hidroponia.hidroponia.HidroponiaApplicationTests
