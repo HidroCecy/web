@@ -6,14 +6,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-   
-
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.5.7</version>
-    <relativePath/>
-</parent>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.7</version>
+        <relativePath/>
+    </parent>
 
     <groupId>com.hidroponia</groupId>
     <artifactId>hidroponia</artifactId>
@@ -25,20 +23,7 @@
         <java.version>17</java.version>
     </properties>
 
-
-<plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-compiler-plugin</artifactId>
-  <version>3.11.0</version>
-  <configuration>
-    <release>17</release>
-  </configuration>
-</plugin>
-
-
-
     <dependencies>
-
         <!-- Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,7 +49,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Actuator (opcional) -->
+        <!-- Actuator -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -76,11 +61,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
+            <!-- Compilador forzado a Java 17 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+
+            <!-- Plugin de Spring Boot -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
