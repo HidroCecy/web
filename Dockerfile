@@ -1,9 +1,9 @@
 FROM openjdk:17-jdk-slim
 
-WORKDIR /app
+WORKDIR /apptarget/hidroponia-0.0.1-SNAPSHOT
 
-COPY target/*.jar app.jar
+COPY target/*.jar target/hidroponia-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "target/hidroponia-0.0.1-SNAPSHOT.jar"]
